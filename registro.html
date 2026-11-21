@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Proyecto Web Final</title>
+    <link rel="stylesheet" href="elcss.css">
+</head>
+<body>
+
+    <h1>PROYECTO WEB FINAL</h1>
+
+    <form action="#" method="POST">
+        <h2>Crear Cuenta</h2>
+        <p class="subtitulo">Registrate para acceder al panel de mis proyectos</p>
+
+        <div class="ot4input">
+            <label for="name">Nombre Completo</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre (min. 6 caracteres)" minlength="6" required>
+        </div>
+
+        <div class="ot4input">
+            <label for="email">Correo Electronico</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="ot4input">
+            <label for="itsonId">ID ITSON</label>
+            <input type="text" id="itsonId" name="itsonId" placeholder="Ej. 216578" pattern="\d{6}" maxlength="6" title="Debe contener 6 digitos numericos" required>
+        </div>
+
+        <div class="ot4input">
+            <label for="password">Contrasena</label>
+            <input type="password" id="password" name="password" placeholder="Minimo 6 caracteres" minlength="6" required>
+        </div>
+
+        <button type="submit" id="btn-enviar">Registrarme</button>
+
+        <p class="nav-auth">
+            ¿Ya tienes cuenta? <a href="login.html">Inicia sesion aqui...</a>
+        </p>
+    </form>
+
+    <script src="java.js"></script>
+</body>
+</html>
