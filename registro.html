@@ -10,13 +10,13 @@
 
     <h1>PROYECTO WEB FINAL</h1>
 
-    <form action="#" method="POST">
+    <form id="register-form">
         <h2>Crear Cuenta</h2>
         <p class="subtitulo">Registrate para acceder al panel de mis proyectos</p>
 
         <div class="ot4input">
-            <label for="name">Nombre Completo</label>
-            <input type="text" id="name" name="name" placeholder="Tu nombre (min. 6 caracteres)" minlength="6" required>
+            <label for="username">Nombre Completo</label>
+            <input type="text" id="username" name="username" placeholder="Tu nombre (min. 6 caracteres)" minlength="6" required>
         </div>
 
         <div class="ot4input">
@@ -25,8 +25,8 @@
         </div>
 
         <div class="ot4input">
-            <label for="itsonId">ID ITSON</label>
-            <input type="text" id="itsonId" name="itsonId" placeholder="Ej. 216578" pattern="\d{6}" maxlength="6" title="Debe contener 6 digitos numericos" required>
+            <label for="itsonid">ID ITSON</label>
+            <input type="text" id="itsonid" name="itsonid" placeholder="Ej. 216578" pattern="\d{6}" maxlength="6" onkeypress="return /[0-9]/i.test(event.key)" title="Debe contener 6 digitos numericos" required>
         </div>
 
         <div class="ot4input">
@@ -41,6 +41,6 @@
         </p>
     </form>
 
-    <script src="java.js"></script>
+    <script type="module" src="registro.js"></script>
 </body>
 </html>
