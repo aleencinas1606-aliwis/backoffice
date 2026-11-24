@@ -3,13 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Final WEB</title>
-    <script>
-        window.location.replace("login.html");
-      </script>
+    <title>Home Proyecto Web Final</title>
+    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="elcss.css">
 </head>
-<body>
-    
+<body class="home-body">
+
+    <header class="home-header">
+      <h1>PROYECTO WEB FINAL</h1>
+      <button id="logout-btn" class="btn-secundario">Cerrar Sesion</button>
+    </header>
+
+    <main class="home-main">
+      <div class="tarjeta-bp" id="intro">
+          <h2>Panel Backoffice</h2>
+          <p class="subtitulo">Administra los proyectos de tu portafolio desde aqui</p>
+      </div>
+
+      <form id="create-project" class="tarjeta-bp">
+          <h2>Crear Proyecto</h2>
+          <p class="subtitulo">Registra un nuevo estreno en tu cartelera</p>
+
+          <div class="ot4input">
+              <label for="name">Nombre:</label>
+              <input id="name" name="name" type="text" placeholder="Nombre del proyecto" required>
+          </div>
+          
+          <div class="ot4input">
+              <label for="description">Descripcion:</label>
+              <input id="description" name="description" type="text" placeholder="Breve descripcion" required>
+          </div>
+          
+          <div class="ot4input">
+              <label for="technologies">Tecnologias:</label>
+              <textarea id="technologies" name="technologies" placeholder="Ej. HTML, CSS, JavaScript" required></textarea>
+          </div>
+          
+          <div class="ot4input">
+              <label for="contributors">Colaboradores:</label>
+              <textarea id="contributors" name="contributors" placeholder="Nombres de colaboradores" required></textarea>
+          </div>
+          
+          <div class="ot4input">
+              <label for="repository">Repositorio:</label>
+              <input id="repository" name="repository" type="text" placeholder="https://github.com..." required>
+          </div>
+          
+          <div class="ot4input">
+              <label for="image">Imagen (URL):</label>
+              <input id="image" name="image" type="text" placeholder="https://..." required>
+          </div>
+          
+          <button type="submit" id="btn-enviar">Guardar</button>
+      </form>  
+              
+      <h2 class="titulo-seccion">Proyectos Registrados</h2>
+      
+      <div id="my-projects">
+          <div class="project">
+              <h3>{nombre del proyecto}</h3>
+              <img src="https://placeholder.com" alt="Vista previa">
+              <p class="description">{descripcion}</p>
+              
+              <p class="etiqueta-rosa"><strong>Tecnologias</strong></p>
+              <div class="projects-section">
+                  <ul>
+                      <li>{tecnologia 1}</li>
+                      <li>{tecnologia 2}</li>
+                  </ul>
+              </div>
+
+              <p class="etiqueta-rosa"><strong>Colaboradores</strong></p>
+              <div class="projects-section">
+                  <ul>
+                      <li>{colaborador 1}</li>
+                      <li>{colaborador 2}</li>
+                  </ul>
+              </div>
+
+              <div class="repository">
+                  Puedes encontrar el repositorio en {repositorio}
+              </div>
+
+              <div class="botones">
+                  <button type="button" class="btn-modificar">Modificar</button>
+                  <button type="button" class="btn-eliminar">Eliminar</button>
+              </div>
+          </div> 
+      </div>
+    </main>
 </body>
 </html>
 
