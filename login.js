@@ -1,4 +1,4 @@
-import { setToken, getToken, removeToken } from './token.js';
+import { setToken, getToken } from './token.js';
 
 const API_BASE = "https://portfolio-api-three-black.vercel.app/api/v1";
 
@@ -30,11 +30,12 @@ loginForm.addEventListener('submit', async (event) => {
   try {
     await login({ email, password });
     
-    alert('Sesion iniciada! Token guardado');
+    alert('Sesion iniciada... token guardado');
     window.location.href = 'index.html';
     
   } catch (error) {
     console.error('Login error:', error);
-    alert('Correo o contraseña invalidos');
+    alert('Correo o contrasena invalidos');
   }
 });
+

@@ -1,4 +1,4 @@
-import { setToken, getToken, removeToken } from './token.js';
+import { getToken } from './token.js';
 
 const API_BASE = "https://portfolio-api-three-black.vercel.app/api/v1";
 
@@ -36,11 +36,12 @@ registerForm.addEventListener('submit', async (event) => {
       password: spassword
     });
     
-    alert('Registro exitoso! Intenta iniciar sesion.');
+    alert('Tu registro fue exitoso... Intenta iniciar sesion');
     window.location.href = 'login.html';
     
   } catch (error) {
     console.error('Registration error:', error);
-    alert('Datos invalidos.');
+    alert('Datos invalidos');
   }
 });
+

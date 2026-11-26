@@ -34,14 +34,14 @@ form {
     background-color: #1c1c1c; 
     padding: 35px;
     border-radius: 12px;
-    box-shadow: 0 0 25px #ffffff; 
+    box-shadow: 0 0 25px rgba(255, 105, 180, 0.2); 
     max-width: 500px;
     width: 100%;
     border: 1px solid #faa0cd; 
 }
 
 h2 {
-    color: #ff71b8; 
+    color: #faa0cd; 
     margin-bottom: 5px;
     text-align: center;
     text-transform: uppercase;
@@ -146,7 +146,7 @@ input:disabled {
     text-decoration: underline;
 }
 
-/*home estilos */
+/* === ESTILOS PARA HOME (index.html) === */
 
 body.home-body {
     align-items: center;
@@ -328,7 +328,19 @@ body.home-body {
     color: #000000;
 }
 
-/* Responsividad */
+.project.mod form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project.mod label {
+    font-size: 13px;
+    color: #ff69b4;
+    font-weight: 600;
+}
+
+/* === responsivo === */
 
 @media (max-width: 768px) {
     body {
